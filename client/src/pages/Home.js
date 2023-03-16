@@ -6,7 +6,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const res = await fetch(`http://localhost:5000/user`);
+      const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/user`);
       const data = await res.json();
       setUsers(data);
     };
@@ -15,9 +15,12 @@ const Home = () => {
 
   const handleDelete = async (id) => {
     try {
-      const res = await fetch(`http://localhost:5000/user/${id}`, {
-        method: "DELETE",
-      });
+      const res = await fetch(
+        `${process.env.REACT_APP_SERVER_URL}/user/${id}`,
+        {
+          method: "DELETE",
+        }
+      );
       if (res.ok) {
         const updatedUsers = users.filter((user) => user._id !== id);
         setUsers(updatedUsers);
