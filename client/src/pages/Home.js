@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <div className="row center">
       {users?.map((user) => (
-        <div className="col-md-4 card me-3 mt-2 p-0" key={user._id}>
+        <div className="card me-3 mt-2 p-0" key={user._id}>
           <img src={user.avatar} alt="" width={"100%"} height={200} />
           <div className="p-4">
             <h4 className="text-center">{user.name}</h4>
