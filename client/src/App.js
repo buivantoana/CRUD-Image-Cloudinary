@@ -1,4 +1,4 @@
-import { Switch, BrowserRouter, Route } from "react-router-dom";
+import { Routes, BrowserRouter, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import AddUser from "./pages/AddUser";
@@ -9,11 +9,11 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <div className="container">
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/add" component={AddUser} />
-          <Route path="/edit/:id" component={EditUser} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="add" element={<AddUser />} />
+          <Route path="edit/:id" element={<EditUser />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );

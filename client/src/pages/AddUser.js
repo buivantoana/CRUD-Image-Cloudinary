@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const AddUser = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [data, setData] = useState({
     name: "",
     image: "",
@@ -23,7 +23,7 @@ const AddUser = () => {
       });
       if (res.ok) {
         setData({ name: "", image: "" });
-        history.replace("/");
+        navigate("/", { replace: true });
       }
     } catch (error) {
       console.log(error);

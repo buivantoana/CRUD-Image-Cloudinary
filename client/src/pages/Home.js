@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 
 const Home = () => {
   const [users, setUsers] = useState();
-
   useEffect(() => {
     const fetchUsers = async () => {
       const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/user`);
@@ -30,14 +29,18 @@ const Home = () => {
     }
   };
   return (
-    <div className="row">
+    <div className="row center">
       {users?.map((user) => (
-        <div className="col-md-3 card me-3 mt-2 p-0" key={user._id}>
+        <div className="col-md-4 card me-3 mt-2 p-0" key={user._id}>
           <img src={user.avatar} alt="" width={"100%"} height={200} />
-          <div className="p-2">
-            <h3>{user.name}</h3>
+          <div className="p-4">
+            <h4 className="text-center">{user.name}</h4>
             <div className="d-flex justify-content-between align-items-center">
-              <Link to={`/edit/${user._id}`} style={{ textDecoration: "none" }}>
+              <Link
+                to={`/edit/${user._id}`}
+                style={{ textDecoration: "none" }}
+                className="edit-button"
+              >
                 Edit
               </Link>
               <button

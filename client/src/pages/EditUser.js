@@ -1,31 +1,34 @@
 import { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const EditUser = ({ match }) => {
-  const history = useHistory();
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+  const userid = pathname.substring(pathname.lastIndexOf("/") + 1);
+
   const [data, setData] = useState({
     name: "",
     image: "",
   });
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_SERVER_URL}/user/${match.params.id}`)
+    fetch(`${process.env.REACT_APP_SERVER_URL}/user/${userid}`)
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
 
   const handleChange = (name) => (e) => {
-    const value = name === "image" ? e.target.files[0] : e.target.value;
+    const value = name === "image" ? e?.target?.files[0] : e?.target?.value;
     setData({ ...data, [name]: value });
   };
 
   const handleSubmit = async () => {
     try {
       let formData = new FormData();
-      formData.append("image", data.image);
-      formData.append("name", data.name);
+      formData.append("image", data?.image);
+      formData.append("name", data?.name);
 
       const res = await fetch(
-        `${process.env.REACT_APP_SERVER_URL}/user/${match.params.id}`,
+        `${process.env.REACT_APP_SERVER_URL}/user/${userid}`,
         {
           method: "PUT",
           body: formData,
@@ -33,7 +36,7 @@ const EditUser = ({ match }) => {
       );
       if (res.ok) {
         setData({ name: "", image: "" });
-        history.replace("/");
+        navigate("/", { replace: true });
       }
     } catch (error) {
       console.log(error);
