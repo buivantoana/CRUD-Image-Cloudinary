@@ -34,13 +34,24 @@ router.delete("/:id", async (req, res) => {
   try {
     // Find user by id
     let user = await User.findById(req.params.id);
+
+    // Check if the user is found
+    if (!user) {
+      return res
+        .status(404)
+        .json({ success: false, message: "User not found" });
+    }
+
     // Delete image from cloudinary
     await cloudinary.uploader.destroy(user.cloudinary_id);
+
     // Delete user from db
-    await user.remove();
+    await user.deleteOne();
+
     res.json(user);
   } catch (err) {
     console.log(err);
+    res.status(500).json({ success: false, message: "Internal Server Error" });
   }
 });
 
@@ -48,6 +59,14 @@ router.put("/:id", upload.single("image"), async (req, res) => {
   try {
     let user = await User.findById(req.params.id);
     // Delete image from cloudinary
+
+    // Check if the user is found
+    if (!user) {
+      return res
+        .status(404)
+        .json({ success: false, message: "User not found" });
+    }
+
     await cloudinary.uploader.destroy(user.cloudinary_id);
     // Upload image to cloudinary
     let result;
@@ -70,6 +89,13 @@ router.get("/:id", async (req, res) => {
   try {
     // Find user by id
     let user = await User.findById(req.params.id);
+
+    // Check if the user is found
+    if (!user) {
+      return res
+        .status(404)
+        .json({ success: false, message: "User not found" });
+    }
     res.json(user);
   } catch (err) {
     console.log(err);
