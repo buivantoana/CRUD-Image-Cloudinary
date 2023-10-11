@@ -1,6 +1,6 @@
 # Cloudinary CRUD Operations MERN Stack Application
 
-![CloudinaryCRUD](https://blogger.googleusercontent.com/img/a/AVvXsEjxAV4b4O51XK-glRlRGRyOl6ctrfN_Ch0JCQHN05kxSTgvdRo7Q98y8SzMnuvROuQEj1w10HZTemiUZpbLw6bfy6fctqOBBJa83RfDzKruLRn234FqlZJxW5FMJixVuwIgVH9tbD2uro31T2FvP7zkcXjHYR29ZfZY3G1YoYLRZ8Pv0ycADkX7-AyKGKlZ=w640-h336)
+![CloudinaryCRUD](https://blogger.googleusercontent.com/img/a/AVvXsEjxAV4b4O51XK-glRlRGRyOl6ctrfN_Ch0JCQHN05kxSTgvdRo7Q98y8SzMnuvROuQEj1w10HZTemiUZpbLw6bfy6fctqOBBJa83RfDzKruLRn234FqlZJxW5FMJixVuwIgVH9tbD2uro31T2FvP7zkcXjHYR29ZfZY3G1YoYLRZ8Pv0ycADkX7-AyKGKlZ=w1200-h1200)
 
 ## Table of Contents
 
@@ -58,15 +58,15 @@ The challenge extended beyond technical aspects to considerations for user exper
 
 ### Home Page
 
-![Home Page](https://blogger.googleusercontent.com/img/a/AVvXsEjmV5wckWNomIlEey_amKZCenczQDREj8NWhQfX0xesSMS7uQ4mfWOTY9RJwDBX7eZHEbWWpSSynIlMrbxdLzmKvuE0Gi5r2asaSKuutKhzzJcZyfEOKB1fV8ZvnHu70L7Wflhs0KWfzCGiFba7wTB-wfxssCW4Iz25rdvVM-SKq5cisdxDBmCz5pH6yhTp=w640-h296)
+![Home Page](https://blogger.googleusercontent.com/img/a/AVvXsEjmV5wckWNomIlEey_amKZCenczQDREj8NWhQfX0xesSMS7uQ4mfWOTY9RJwDBX7eZHEbWWpSSynIlMrbxdLzmKvuE0Gi5r2asaSKuutKhzzJcZyfEOKB1fV8ZvnHu70L7Wflhs0KWfzCGiFba7wTB-wfxssCW4Iz25rdvVM-SKq5cisdxDBmCz5pH6yhTp=w1200-h1200)
 
 ### Edit Page
 
-![Edit Page](https://blogger.googleusercontent.com/img/a/AVvXsEjPPUL7P5rCEdfoS4RVoTj_cFP7iQlJID3hLh8OlDEW9qBudsxcS3JWbmZpgTjME_P9fJPXeiA3ZCWfDnE_yaN8_n5ZNwu3OOrl7kXHomFQdGWo6ZPac8bS33buMDnxmJYeBC5WwaxndnG3JsXrbCtvs-olKDu-bEmhAFnRv3PnnBfBRP7zaBN135a9QA1m=w640-h210)
+![Edit Page](https://blogger.googleusercontent.com/img/a/AVvXsEjPPUL7P5rCEdfoS4RVoTj_cFP7iQlJID3hLh8OlDEW9qBudsxcS3JWbmZpgTjME_P9fJPXeiA3ZCWfDnE_yaN8_n5ZNwu3OOrl7kXHomFQdGWo6ZPac8bS33buMDnxmJYeBC5WwaxndnG3JsXrbCtvs-olKDu-bEmhAFnRv3PnnBfBRP7zaBN135a9QA1m=w1200-h1200)
 
 ### Add Page
 
-![Add Page](https://blogger.googleusercontent.com/img/a/AVvXsEiFc38V5xdnro0qIeYC__Upajj0f4A1-morNKmzFDdIOZBlmg1Ipu_yTkWioo9Zzj292ZmWl4WWf3y1sQCQPBqw8TNwQwT3amuN1VXdWMdwtDG24lYvXIL2rK7jXV5Yi3SCnKs_dztrwJr0ozswpN_T-Dn8bfDMIMZ2wXb6fxhkABWiWOg-57NQ8PSrRheW=w640-h238)
+![Add Page](https://blogger.googleusercontent.com/img/a/AVvXsEiFc38V5xdnro0qIeYC__Upajj0f4A1-morNKmzFDdIOZBlmg1Ipu_yTkWioo9Zzj292ZmWl4WWf3y1sQCQPBqw8TNwQwT3amuN1VXdWMdwtDG24lYvXIL2rK7jXV5Yi3SCnKs_dztrwJr0ozswpN_T-Dn8bfDMIMZ2wXb6fxhkABWiWOg-57NQ8PSrRheW=w1200-h1200)
 
 ## Learn More About this Project
 
@@ -151,3 +151,5 @@ Create a `.env` file in your client directory and provide your live server URL
 ## Contribute and Support ❤️
 
 If you find this project useful and would like to contribute or show your support, we welcome your involvement. Feel free to submit pull requests, report issues, or share your feedback. Your contributions make this project even better!
+
+Also, don't forget to give a star ⭐ to this repo
